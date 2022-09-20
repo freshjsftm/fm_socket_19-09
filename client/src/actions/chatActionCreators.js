@@ -15,16 +15,16 @@ export const getMessagesError = (error)=>({
 })
 
 export const createMessageRequest = (message)=>({
-  type: ACTION_TYPES.GET_MESSAGES_REQUEST,
+  type: ACTION_TYPES.CREATE_MESSAGE_REQUEST,
   payload: {message}
 })
 
 export const createMessageSuccess = (message)=>({
-  type: ACTION_TYPES.GET_MESSAGES_SUCCESS,
+  type: ACTION_TYPES.CREATE_MESSAGE_SUCCESS,
   payload: {message}
 })
 
 export const createMessageError = (error)=>({
-  type: ACTION_TYPES.GET_MESSAGES_ERROR,
+  type: ACTION_TYPES.CREATE_MESSAGE_ERROR,
   payload: {error}
 })
