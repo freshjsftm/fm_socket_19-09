@@ -12,7 +12,6 @@ io.on("connection", (socket) => {
   console.log("socket connect - ", socket);
   socket.on(SOCKET_EVENTS.NEW_MESSAGE, async (newMessage) => {
     try {
-      console.log(newMessage);
       const saveMessage = await Message.create(newMessage);
       io.emit(SOCKET_EVENTS.NEW_MESSAGE, saveMessage);
     } catch (error) {
