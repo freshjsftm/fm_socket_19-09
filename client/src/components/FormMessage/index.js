@@ -11,8 +11,9 @@ const FormMessage = () => {
     dispatch
   );
   const onSubmit = (values, formikBag)=>{
+    console.log(values)
     createMessageRequest(values);
-    formikBag.resetForm();
+    //formikBag.resetForm();
   }
   return( <Formik initialValues={{content:'', user:''}} onSubmit={onSubmit}>
     <Form>

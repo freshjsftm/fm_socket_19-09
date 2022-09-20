@@ -6,7 +6,7 @@ import rootSaga from "./sagas";
 
 const sagaMV = createSagaMV();
 
-const store = legacy_createStore(rootReducer, 
+const store = legacy_createStore(rootReducer,
   composeWithDevTools(applyMiddleware(sagaMV))
 );
 
